@@ -1,9 +1,9 @@
-#  PortFolio Chat Bot Website
+# PortFolio Chat Bot Website
+
 ### (Homebrewed:)
 
 ## Instructions
 
 1. Clone the repo
-2. Install packages: `npm install`
-3. Start the server: `node server.js` `
-4. Visit in browser at: `http://localhost:8080`
+2. Start the server: `node server.js` `
+3. Visit in browser at: `http://localhost:3000`
