@@ -1,0 +1,87 @@
+<%- contentFor('hero') %>
+	<section class="hero intro playback">
+		<div class="hero-content">
+			<h2>Oh
+				<span class="play">hayy!</span>
+			</h2>
+			<p>I am Arpan Sen -- </p>
+			<p>I love to code anything Javascript.</p>
+
+			<h4>Currently open to new opportunities! </h4>
+
+			<!-- CONTACT SECTION -->
+			<div class="contact">
+				<a href="mailto:gaston.mazza1@gmail.com">
+					<div class="button button1">
+						<img src="img/mail.svg">
+					</div>
+				</a>
+				<a href="https://github.com/warpan20/" target="_blank">
+					<div class="button button1">
+						<img src="img/github.svg">
+					</div>
+				</a>
+				<a href="https://www.linkedin.com/in/arpan-sen-756419216/" target="_blank">
+					<div class="button button1">
+						<img src="img/linkedin.svg" alt="icon">
+					</div>
+				</a>
+			</div>
+
+		</div>
+	</section>
+
+	<%- contentFor('body') %>
+
+		<div class="jumbotron text-center">
+			<h3>I am mostly in the office right now!</h3>
+			<h3>Please feel free to talk to my assistant,<br> 
+				it's able to answer	all your questions about me.
+			</h3>
+			<div id="main">
+				<!-- <div>user:
+					<span id="user"></span>
+				</div> -->
+				<!-- <div>chatbot:
+					<span id="chatbot"></span>
+				</div> -->
+				<div>
+					<!-- <input id="input" type="text" placeholder="say anything..." autocomplete="off" /> -->
+					<!-- <button class="btn btn-default">Let's chat!</button> -->
+				</div>
+			</div>
+
+		</div>
+
+
+		<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Let's Chat!</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Personal Assistant</h4>
+      </div>
+      <div class="modal-body">
+				<!-- <p>Some text in the modal.</p> -->
+				<div id="result">Hi there! At this time I'm only able to answers questions related to Arpan's resume things like work experience, projects and more..
+					<br>You can start by saying Hi! Thank you.  </div>
+				<button onClick="startConverting();"><i class="fa fa-microphone buttonMic"></i></button>
+
+				<input id="input" type="text" placeholder="say anything..." autocomplete="off" />
+
+				<h5 id="chatbot"></h5>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
